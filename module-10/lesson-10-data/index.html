@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MAP672 Portfolio Example</title>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    
+<link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+
+<meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
+
+<style>
+    
+    header {
+        width: 100%;
+        min-width: 800px;
+        margin: 0 auto;
+        background: #34675C;
+        padding: 15px 0 20px;
+       }
+    h1 {
+        font-family: 'Oswald', sans-serif;
+        color: #B3C100;
+        width: 80%;
+        margin: 0 auto;
+        color: #B3C100;
+    }
+    h2 {
+        font-family: 'Oswald', sans-serif;
+        color: #B3C100;
+        width: 80%;
+        margin: 0 auto;
+        color: #B3C100;
+    }
+    h3 {
+        font-family: 'Oswald', sans-serif;
+        color:  #34675C;
+    }
+    p {
+        font-size: .9em;
+        color:  #34675C;
+    }
+    ul {
+        list-style-type: none;
+        font-size: .9em;
+        color:  #34675C;
+        line-height: 1.6em;
+    }
+    a, a:visited {
+        color: #003d71;
+    }
+    
+    body {
+        background: #E2DFA2;
+        font-family: sans-serif;
+    }
+    .project {
+        width: 80%;
+        min-width: 800px;
+        height: 100%;
+        margin: 35px auto;
+    }
+    .project:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .project-image {
+        width: 388px;
+        height: 240px;
+        background: white;
+        float: left;
+        margin-right: 20px;
+        border: 2px solid #dddddd;
+    }
+
+</style>
+</head>
+
+<body>
+    <header>
+    <h1>Mapping Solutions for the National Level</h1>
+    <h2>Logan Steele's Web Portfolio for MAP 672</h2>
+    </header>
+
+   <section class="project">
+       <a target = '_blank' href="/lesson-10-graphics/breweries-us.png"><img src="/lesson-10-graphics/breweries.PNG" alt="Breweries Across the U.S." class="project-image" /> </a>
+    <h3>Breweries Across the U.S.</h3>
+    <p>This map was created while taking MAP 671: Introduction to New Mapping at the University of Kentucky. This map was created halfway through the course. This map shows hexbins, that are categorized into 5 levels. These levels show how many breweries are located within the hexbin. For this map, the hexbins were set to 50 km diameters.  </p>
+    <p>This map was created in QGIS by taking in .csv data provided by the professor, which they received from the listed source. This .csv data was converted into point data and then created new polygon shapefiles, the hexbins, that will be used to count data points within each hexbin. </p>
+    <ul>
+        <li>See Map: <a href="/lesson-10-graphics/breweries-us.png"> Hexbin Map of Breweries with the United States</a></li>
+        <li>Data Source: <a href="http://www.poi-factory.com">The POI Factory. CSV data file: poifactory-breweries.csv   </a></li>
+    </ul>
+</section>
+    
+<section class="project">
+    <a target = '_blank' href="https://lsteele.cartodb.com/viz/b631504e-924b-11e5-9869-0ecd1babdde5/public_map"><img src= "/lesson-10-graphics/cancer-rates-us.PNG" alt= "Cancer Rates in the U.S. by Counties" class="project-image" /> </a>
+    <h3>Cancer Rates in the U.S. by Counties</h3>
+    <p>This map was created in the same class as the map above; however, further along in the class. This map was used in coordination with CartoDB for making online, interactive maps. </p>
+    <p>Data for this map was retrieved from the State Cancer Profiles website, downloaded onto our local machines, used withing QGIS, and integrated with CartoDB for making an interactive map.</p>
+    <ul>
+        <li>See the map: <a target = '_blank' href="https://lsteele.cartodb.com/viz/b631504e-924b-11e5-9869-0ecd1babdde5/public_map"> Cancer Rates in the U.S. by Counties </a></li>
+        <li>Data Source: <a target = '_blank' href="http://www.statecancerprofiles.cancer.gov/"> State Cancer Profiles </a></li>
+    </ul>
+</section>
+    
+<section class="project">
+    <a target = '_blank' href="http://ltst226.github.io/"> <img src="/lesson-10-graphics/energy.PNG" alt="Power Plants Across the U.S." class="project-image"/> </a>
+    <h3>Power Plants Across the U.S.</h3>
+    <p>This map was created in MAP 672 while learning javascript programming. The programming language was written inside a program called Brackets. We used this information along with Github to upload and share our data.</p>
+    <p>This proportional symbol map was created with data gathered from the Energy Information Administration. We used a seperate file to load into our javascript programming to link all the symbols. The program was then created to become user friendly and included writting programming to add popups.</p>
+    <ul>
+        <li>See the map: <a target = '_blank' href="http://ltst226.github.io/"> Power Plants Across the U.S.</a></li>
+        <li>Data Source: <a target = '_blank' href="http://www.eia.gov/electricity/data/eia923/"> Energy Information Administration</a></li>
+    </ul>
+
+</section>
+    
+</body>
+</html>
